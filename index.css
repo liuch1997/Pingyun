@@ -1,0 +1,250 @@
+/*初始化*/
+html, body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background: #FFF;
+	width: 750px;
+	height: 1334px;
+}
+
+* {
+	box-sizing: border-box;
+	list-style:none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	color:#F00;
+} 
+
+#layout {
+	position: relative;
+	width: 100%;
+	height: 1334px;
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 130px;
+	background-color: #FFF;
+	opacity: 0.8;
+	z-index: 999;
+	font-family: "微软雅黑";
+}
+
+#main {
+	position: absolute;
+	width: 100%;
+	top: 130px;
+}
+
+nav img {
+	width: 120px;
+}
+
+nav > div {
+	display: inline;
+	width: 150px;
+	height: 130px;
+	margin: 25px 0 0 0;
+	float: left;
+	vertical-align: middle;
+}
+
+nav > ul {
+	display: inline;
+	height: 130px;
+	padding: auto 0;
+	position: relative;
+	list-style-type: none;
+}
+
+nav li {
+	display: inline;
+	float: left;
+	margin: 45px 0 0 0;
+	width: 140px;
+	height: 130px;
+}
+
+nav > ul a {
+	color: #000;
+	text-decoration: none;
+	font-size: 22px;
+}
+
+#contant_1 {
+	width: 100%;
+	height: 388px;
+	background-image: url(pic/contant1.png);
+	background-size: 750px auto;
+	background-repeat: no-repeat;
+}
+
+#contant_2 {
+	width: 100%;
+	height: 270px;
+	background-image: url(pic/contant2.png);
+	background-size: 750px auto;
+	background-repeat: no-repeat;
+}
+
+#contant_3 {
+	width: 100%;
+	height: 450px;
+	background-image: url(pic/contant3.jpg);
+	background-size: 750px auto;
+	background-repeat: no-repeat;
+	padding: 100px 0 0 70px;
+}
+
+#contant_4 {
+	width: 100%;
+	height: 270px;
+	background-image: url(pic/contant4.png);
+	background-size: 750px auto;
+	background-repeat: no-repeat;
+}
+
+#contant_5 {
+	width: 750px;
+	height: 398px;
+}
+
+
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;/*兼容移动端主流浏览器*/
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;/*清除移动端点击高亮效果*/
+}
+
+body{
+    font-family:Microsoft YaHei,sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+/*清除浮动*/
+.swipe::before,
+.swipe::after{
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.layout{
+    width: 100%;
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.swipe{
+    width: 1000%;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
+}
+
+.swipe li{
+    width: 10%;
+    float: left;
+}
+
+.swipe li a{
+    display: block;
+    width: 100%;
+}
+
+.swipe li a img{
+    width: 100%;
+    display: block;
+}
+
+.swipe-btn-list{
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    text-align: center;
+}
+
+.swipe-btn-list li{
+    width: 6px;
+    height: 6px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.swipe-btn-list li:first-child{
+    margin-left: 0;
+}
+
+.swipe-btn-list li.now{
+    background: #fff;
+}
+
+#contant_6 {
+	width: 100%;
+	height: 270px;
+	background-image: url(pic/contant6.png);
+	background-size: 750px auto;
+	background-repeat: no-repeat;
+}
+
+#contant_7 {
+	width: 750px;
+	height: 550px;
+}
+
+#news {
+	width: 550px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#news >  li {
+	width: 550px;
+	margin: 5px 0;
+}
+
+#news >  li > span {
+	float: right;
+}
+
+#news > ul > li > a {
+	width: 500px;
+}
+
+footer {
+	width: 100%;
+	height: 300px;
+	background-image: url(pic/contact.png);
+	background-size: 750px auto;
+	background-repeat: no-repeat;
+}
